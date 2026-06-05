@@ -368,3 +368,31 @@ button:hover {
     background:#ffe4ec;
     font-weight:bold;
 }
+@media (max-width: 768px) {
+
+    .nav-links {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        gap: 15px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-logo {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .login-box,
+    .form-box {
+        width: 90%;
+    }
+
+    .card,
+    .product-card {
+        width: 90%;
+    }
+}
