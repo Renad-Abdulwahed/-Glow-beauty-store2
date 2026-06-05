@@ -36,10 +36,10 @@ function login() {
     }
 
     // إذا كل شيء صحيح يدخل الهوم
-    window.location.href = "home.html";
-    // إذا كل شيء صحيح يدخل الهوم
+    window.location.href = "index.html";
+    
 localStorage.setItem("username", username.value.trim());
-window.location.href = "home.html";
+window.location.href = "index.html";
 }
 
 
