@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home - Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="home-container">
+        <!-- شريط التنقل العلوي -->
+    <nav class="navbar">
+        <div class="nav-logo">🌸 Glow Beauty</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="add.html">Add Product</a></li>
+            <li><a href="delete.html">Delete Product</a></li>
+            <li><a href="update.html">Update Product</a></li>
+            <li><a href="view.html">View Products</a></li>
+            <li><a href="search.html">Sreach Products</a></li>
+            <li><a href="about.html">About the store</a></li>
+        </ul>
+        
+    </nav>
+        <h1 id="welcome"></h1>
+        <h2>Glow Beauty Store</h2>
+      
+        <!-- إضافة المقدمة هنا -->
+        <p class="store-introduction">Glow Beauty Store is a web-based project designed to manage beauty and fashion products such as makeup, perfumes, accessories, and beauty bags.</p>
+        <div class="cards">
+            <a href="about.html" class="card">About the store</a>
+        </div>
+  
+
+    <script src="script.js"></script>
+    <script>
+        var username = localStorage.getItem("username");
+        document.getElementById("welcome").innerHTML =
+            "Welcome " + (username ? username : "Guest") + " ✨";
+            
+     
+        
+    </script>
+    <button class="dark-btn" onclick="toggleDarkMode()">
+🌙
+</button>
+</body>
+</html>
